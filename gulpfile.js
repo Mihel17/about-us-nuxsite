@@ -16,9 +16,9 @@ const fileinclude = require('gulp-file-include');
 const sync = require("browser-sync").create();
 const uncss = require('gulp-uncss');
 
+// Path open server
 
-const PATH_TO_DIST = '/OpenServer/domains/nuxsite'
-
+const PATH_TO_DIST = '/OpenServer/domains/about-nuxsite'
 
 // Styles
 
@@ -40,7 +40,6 @@ const styles = () => {
     .pipe(gulp.dest(`${PATH_TO_DIST}/css`))
     .pipe(sync.stream());
 }
-
 exports.styles = styles;
 
 // HTML
@@ -71,6 +70,7 @@ const webpOptimized = () => {
     .pipe(gulp.dest("dist/img"))
     .pipe(gulp.dest(`${PATH_TO_DIST}/img`));
 }
+exports.webpOptimized = webpOptimized;
 
 const createWebp = () => {
   return gulp.src("src/img/**/*.{jpg,png}")
@@ -82,8 +82,6 @@ const createWebp = () => {
     .pipe(gulp.dest("dist/img"))
     .pipe(gulp.dest(`${PATH_TO_DIST}/img`));
 }
-
-exports.webpOptimized = webpOptimized;
 exports.createWebp = createWebp;
 
 // Sprite
@@ -110,16 +108,14 @@ const spriteMin = () => {
 }
 exports.spriteMin = spriteMin;
 
-
 // Copy
+
 const copy = (done) => {
   gulp.src([
     "src/assets/fonts/*.{woff2,woff}",
     "src/assets/favicon/**/*",
     "src/assets/img/icons/*.svg",
     "src/layout/**/*.php",
-    // "src/assets/leafleat/**/*",
-    // "src/assets/img/promo.webp"
   ], {
     base: "src"
   })
@@ -142,11 +138,18 @@ exports.copy = copy;
 
 // Clean
 
+const cleanOpenServer = () => {
+  return del([PATH_TO_DIST], {
+    force: true
+  });
+};
+exports.clean = cleanOpenServer;
+
 const clean = () => {
   return del("dist");
-  // return del(PATH_TO_DIST);
 };
 exports.clean = clean;
+
 
 // Server
 
@@ -173,15 +176,14 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("src/*.scss", gulp.series(styles));
-  gulp.watch("src/assets/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("src/*.js", gulp.series(webpackRun, reload));
-  gulp.watch("src/assets/js/**/*.js", gulp.series(webpackRun, reload));
+  gulp.watch("src/**/*.scss", gulp.series(styles));
+  gulp.watch("src/**/*.js", gulp.series(webpackRun, reload));
   gulp.watch("src/**/*.html", gulp.series(html, reload));
+  gulp.watch("src/**/*.php", gulp.series(html, reload));
 }
 
-
 // Webpack
+
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
@@ -194,11 +196,11 @@ const webpackRun = (done) => {
   done();
 }
 
-
 // Build
 
 const build = gulp.series(
   clean,
+  cleanOpenServer,
   copy,
   // copyStyle,
   gulp.parallel(
@@ -217,6 +219,7 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
+  cleanOpenServer,
   copy,
   // copyStyle,
   gulp.parallel(
@@ -231,4 +234,5 @@ exports.default = gulp.series(
   gulp.series(
     server,
     watcher
-  ));
+  )
+);

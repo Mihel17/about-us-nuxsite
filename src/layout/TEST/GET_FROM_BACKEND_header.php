@@ -1,8 +1,8 @@
-<header class="fixedWraper mainHeader headerBg" style="top: 0%; position: absolute;">
+<header class="fixedWraper mainHeader headerBg" style="top: 0%; position: absolute; background: none;">
   <div class="container">
     <div class="navigationWrapper">
       <div class="logo">
-        <a href="/"><img src="https://nuxsite1.nuxbet.com//img/logo.png" alt="NuxGame" title="NuxGame"></a>
+        <a href="/"><img src="https://test.nuxapi.com/img/logo.png" alt="NuxGame" title="NuxGame"></a>
       </div>
       <nav class="socialNav">
         <h4>FOLLOW US</h4>

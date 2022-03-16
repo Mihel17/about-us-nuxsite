@@ -1,0 +1,33 @@
+.about-promo__slider.slick-slider {
+  max-width: calc(100vw - 15px * 2) !important;
+  overflow: visible !important;
+  min-width: 0;
+  position: relative;
+  padding: 0 50px;
+  right: 65px;
+
+  @media (min-width: $tablet) {
+    padding: 0 70px;
+    right: 85px;
+  }
+
+  .slick-list {
+    overflow: visible !important;
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .slick-dots {
+    gap: 10px;
+    height: 5px;
+
+    li {
+      height: 100%;
+      background: white;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,2 +1,3 @@
-// import './assets/js/modules/map.js'
+import './assets/js/slider.js'
+
 

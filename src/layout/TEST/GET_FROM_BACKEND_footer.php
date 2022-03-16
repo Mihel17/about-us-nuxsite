@@ -3,7 +3,7 @@
     <div class="footerGrid">
       <div class="col">
         <div class="footerLogo">
-          <img src="https://nuxsite1.nuxbet.com/img/logo_footer.png" alt="Nux" title="Nux">
+          <img src="https://test.nuxapi.com/img/logo_footer.png" alt="Nux" title="Nux">
         </div>
         <div class="colInner">
           <ul class="contacts">
@@ -11,13 +11,13 @@
           </ul>
           <ul class="footerIcons">
             <li>
-              <img src="https://nuxsite1.nuxbet.com/img/icons/18_years.svg" alt="18 years" title="18 years">
+              <img src="https://test.nuxapi.com/img/icons/18_years.svg" alt="18 years" title="18 years">
             </li>
             <li>
-              <img src="https://nuxsite1.nuxbet.com/img/icons/ssl.svg" alt="SSL" title="SSL">
+              <img src="https://test.nuxapi.com/img/icons/ssl.svg" alt="SSL" title="SSL">
             </li>
             <li>
-              <img src="https://nuxsite1.nuxbet.com/img/icons/gambleaware.svg" alt="Gambleaware" title="Gambleaware">
+              <img src="https://test.nuxapi.com/img/icons/gambleaware.svg" alt="Gambleaware" title="Gambleaware">
             </li>
           </ul>
         </div>
@@ -82,7 +82,7 @@
           <div class="scriptContent">
             This service operates under the Antillephone License
             <a target="_blank" rel="nofollow"
-              href="https://www.dmca.com/Protection/Status.aspx?ID=7218619b-9b4f-4997-82c8-a9a7803a98d8&amp;refurl=https://nuxsite1.nuxbet.com/"
+              href="https://www.dmca.com/Protection/Status.aspx?ID=7218619b-9b4f-4997-82c8-a9a7803a98d8&amp;refurl=https://test.nuxapi.com/"
               title="DMCA.com Protection Status" class="dmca-badge">
               <img rel="nofollow"
                 src="https://images.dmca.com/Badges/_dmca_premi_badge_4.png?ID=7218619b-9b4f-4997-82c8-a9a7803a98d8"
@@ -103,6 +103,9 @@
     </div>
   </div>
   <style>
+.fixedWraper:after {
+  background: none !important;
+}
 
 .slick-dots,ul{list-style:none;}
 a,div,h1,h2,h3,h4,header,img,li,nav,p,section,span,ul{margin:0;padding:0;border:0;vertical-align:baseline;}
@@ -130,7 +133,7 @@ header,nav,section{display:block;}
 .slick-slide img{display:block;}
 .slick-initialized .slick-slide{display:block;}
 
-.fixedWraper{z-index:10;background:url(https://nuxsite1.nuxbet.com/img/header_bg.png) no-repeat;background-size:cover;transition:all 1s;}
+.fixedWraper{z-index:10;background:url(https://test.nuxapi.com/img/header_bg.png) no-repeat;background-size:cover;transition:all 1s;}
 .fixedWraper,.fixedWraper:after{position:absolute;width:100%;top:0;left:0;}
 .fixedWraper:after{content:"";height:100%;background:linear-gradient(332.47deg,rgba(3,0,58,.15) 14.92%,rgba(149,151,255,.15) 97.67%);-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);}
 .fixedWraper.mainHeader .navigationWrapper:after{height:130px;transition:all 1s;}
@@ -150,44 +153,44 @@ header,nav,section{display:block;}
 .navigationWrapper .socialNav .social li:last-child{margin-right:0;}
 .navigationWrapper .socialNav .social li a{width:15px;}
 .mobileNavBtnWrapper{display:none;z-index:2;}
-.mobileNavBtnWrapper .mobileNavBtn{background:url(https://nuxsite1.nuxbet.com/img/icons/Menu.svg) no-repeat 50%;border:none;outline:none;cursor:pointer;transition:all .3s;}
+.mobileNavBtnWrapper .mobileNavBtn{background:url(https://test.nuxapi.com/img/icons/Menu.svg) no-repeat 50%;border:none;outline:none;cursor:pointer;transition:all .3s;}
 nav{display:flex;align-items:center;flex-grow:1;position:relative;}
 .logo{z-index:2;width:180px;}
 .logo img{display:block;}
-.icon{margin-left:10px;transform:rotate(180deg);background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_up.svg) no-repeat 50%;width:8px;height:7px;transition:all .3s;}
+.icon{margin-left:10px;transform:rotate(180deg);background:url(https://test.nuxapi.com/img/icons/arrow_up.svg) no-repeat 50%;width:8px;height:7px;transition:all .3s;}
 .icon,.nav,.nav>li{display:flex;align-items:center;}
 .nav>li{margin-right:38px;padding:0;position:relative;}
 .nav>li:last-child{margin:0;}
 .nav>li>a{padding:20px 0;font-family:Open Sans,sans-serif;}
 .nav>li a{color:#fff;font-weight:700;font-size:14px;line-height:20px;text-decoration:none;text-transform:uppercase;}
 .nav>li a:hover{color:#7c7cff;transition:all .3s;}
-.nav>li a:hover+.icon{background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_up_hover.svg);transition:all .3s;}
-.nav .navDropDown{position:absolute;width:1000px;max-width:300px;top:98%;left:0;overflow:hidden;z-index:-100;padding:20px 23px;visibility:hidden;border:1px solid hsla(0,0%,100%,.2);box-sizing:border-box;background:url(https://nuxsite1.nuxbet.com/img/dropDown_bg.png) no-repeat 50%;background-size:cover;}
+.nav>li a:hover+.icon{background:url(https://test.nuxapi.com/img/icons/arrow_up_hover.svg);transition:all .3s;}
+.nav .navDropDown{position:absolute;width:1000px;max-width:300px;top:98%;left:0;overflow:hidden;z-index:-100;padding:20px 23px;visibility:hidden;border:1px solid hsla(0,0%,100%,.2);box-sizing:border-box;background:url(https://test.nuxapi.com/img/dropDown_bg.png) no-repeat 50%;background-size:cover;}
 .nav .navDropDown:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(332.47deg,rgba(3,0,58,.3) 14.92%,rgba(149,151,255,.3) 97.67%);-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);}
 .nav .navDropDown li{margin:0 0 17px;position:relative;z-index:1;}
 .nav .navDropDown li:last-child{margin-bottom:0;}
 .nav .navDropDown li a{color:#fff;text-transform:none;display:block;font-size:14px;line-height:17px;font-weight:400;padding:0!important;position:relative;}
-.nav .navDropDown li a:after{content:"";position:absolute;top:50%;transform:translateY(-50%);right:0;width:12px;height:12px;background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_drop.svg) no-repeat 50%;opacity:0;transition:all .3s;}
+.nav .navDropDown li a:after{content:"";position:absolute;top:50%;transform:translateY(-50%);right:0;width:12px;height:12px;background:url(https://test.nuxapi.com/img/icons/arrow_drop.svg) no-repeat 50%;opacity:0;transition:all .3s;}
 .nav .navDropDown li:hover a{color:#7c7cff;font-weight:700;}
 .nav .navDropDown li:hover a:after{opacity:1;transition:all .3s;}
 .mainNav{display:flex;justify-content:flex-end;z-index:2;}
 .mainNav .nav>li a{padding:14px 0;}
 .mainNav .mobLang{display:none;}
-.dropItem{width:40px;height:40px;line-height:40px;text-align:center;cursor:pointer;pointer-events:auto;background-size:15px 15px;background-position:50%;position:absolute;top:2px;right:8px;display:none;background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_up.svg) no-repeat 50%;transition:all .3s;transform:rotate(180deg);}
+.dropItem{width:40px;height:40px;line-height:40px;text-align:center;cursor:pointer;pointer-events:auto;background-size:15px 15px;background-position:50%;position:absolute;top:2px;right:8px;display:none;background:url(https://test.nuxapi.com/img/icons/arrow_up.svg) no-repeat 50%;transition:all .3s;transform:rotate(180deg);}
 .langSwitcherWrapper{position:relative;margin-left:26px;}
 .langSwitcherWrapper .currentLang{position:relative;display:inline-block;padding:30px 15px 30px 0;}
-.langSwitcherWrapper .currentLang:after{content:"";position:absolute;right:0;top:50%;transform:translateY(-50%) rotate(180deg);background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_up.svg) no-repeat 50%;transition:all .3s;background-size:cover;width:7px;height:8px;}
+.langSwitcherWrapper .currentLang:after{content:"";position:absolute;right:0;top:50%;transform:translateY(-50%) rotate(180deg);background:url(https://test.nuxapi.com/img/icons/arrow_up.svg) no-repeat 50%;transition:all .3s;background-size:cover;width:7px;height:8px;}
 .langSwitcherWrapper>a{color:#fff;font-size:14px;line-height:20px;font-family:inherit;font-weight:700;text-decoration:none;}
 .langSwitcherWrapper:hover .currentLang{color:#7c7cff;}
-.langSwitcherWrapper:hover .currentLang:after{background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_up_hover.svg) no-repeat 50%;transition:all .3s;}
+.langSwitcherWrapper:hover .currentLang:after{background:url(https://test.nuxapi.com/img/icons/arrow_up_hover.svg) no-repeat 50%;transition:all .3s;}
 .langSwitcherWrapper svg{width:21px;height:12px;}
-.langSwitcher{top:100%;right:0;padding:20px;border:1px solid hsla(0,0%,100%,.2);box-sizing:border-box;width:1000px;max-width:300px;opacity:0;z-index:-100;transition:opacity .3s;visibility:hidden;background:url(https://nuxsite1.nuxbet.com/img/dropDown_bg.png) no-repeat 50%;background-size:cover;}
+.langSwitcher{top:100%;right:0;padding:20px;border:1px solid hsla(0,0%,100%,.2);box-sizing:border-box;width:1000px;max-width:300px;opacity:0;z-index:-100;transition:opacity .3s;visibility:hidden;background:url(https://test.nuxapi.com/img/dropDown_bg.png) no-repeat 50%;background-size:cover;}
 .langSwitcher,.langSwitcher:after{position:absolute;-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);}
 .langSwitcher:after{content:"";top:0;left:0;width:100%;height:100%;background:linear-gradient(332.47deg,rgba(3,0,58,.3) 14.92%,rgba(149,151,255,.3) 97.67%);}
 .langSwitcher li{margin-bottom:15px;position:relative;z-index:1;}
 .langSwitcher li:last-child{margin-bottom:0;}
 .langSwitcher li a{color:#fff;text-transform:none;display:flex;align-items:center;font-size:14px;line-height:17px;font-weight:400;position:relative;text-decoration:none;}
-.langSwitcher li a:after{content:"";position:absolute;top:50%;transform:translateY(-50%);right:0;width:12px;height:12px;background:url(https://nuxsite1.nuxbet.com/img/icons/arrow_drop.svg) no-repeat 50%;opacity:0;transition:all .3s;}
+.langSwitcher li a:after{content:"";position:absolute;top:50%;transform:translateY(-50%);right:0;width:12px;height:12px;background:url(https://test.nuxapi.com/img/icons/arrow_drop.svg) no-repeat 50%;opacity:0;transition:all .3s;}
 .langSwitcher li a svg{margin-right:13px;}
 .langSwitcher li:hover a{color:#7c7cff;font-weight:700;}
 .langSwitcher li:hover a:after{opacity:1;transition:all .3s;}
@@ -203,10 +206,10 @@ nav{display:flex;align-items:center;flex-grow:1;position:relative;}
 .langSwitcherWrapper:focus .langSwitcher,.langSwitcherWrapper:hover .langSwitcher{opacity:1;z-index:1;visibility:visible;}
 }
 @media (max-width:991px){
-.fixedWraper{background:url(https://nuxsite1.nuxbet.com/img/mobStatick_bg.png) no-repeat;background-size:cover;}
+.fixedWraper{background:url(https://test.nuxapi.com/img/mobStatick_bg.png) no-repeat;background-size:cover;}
 .fixedWraper .container{padding:0;}
 .fixedWraper:after{display:none;}
-.fixedWraper .mainNav{background:url(https://nuxsite1.nuxbet.com/img/mobBgLight_full.png) no-repeat;background-size:cover;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);transition:all .3s;}
+.fixedWraper .mainNav{background:url(https://test.nuxapi.com/img/mobBgLight_full.png) no-repeat;background-size:cover;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);transition:all .3s;}
 .fixedWraper .navigationWrapper{position:relative;padding:15px;-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0);transition:all .3s;}
 .navigationWrapper{border:none;}
 .langSwitcher{left:0;width:100%;}
@@ -256,7 +259,7 @@ h2{font-family:Open Sans,sans-serif;font-weight:700;font-size:70px;line-height:8
 h2 span{display:initial;width:100%;}
 h3{font-family:Open Sans,sans-serif;font-weight:700;font-size:28px;line-height:93%;text-transform:uppercase;color:#fff;}
 .colLeft,.colRight{flex-basis:50%;}
-.mainScreen{position:relative;min-height:1600px;background:url(https://nuxsite1.nuxbet.com/img/back_without-sphere1.png) no-repeat top;background-size:auto;overflow:hidden;}
+.mainScreen{position:relative;min-height:1600px;background:url(https://test.nuxapi.com/img/back_without-sphere1.png) no-repeat top;background-size:auto;overflow:hidden;}
 .mainScreen:after{content:"";background:#0c0c0c;}
 .mainScreen:after{position:absolute;width:100%;height:100%;top:0;left:0;z-index:-1;}
 .mainScreen .topBanner{display:flex;justify-content:space-between;position:relative;}
@@ -455,7 +458,7 @@ h2{font-size:50px;line-height:50px;margin-bottom:30px;}
 @-webkit-keyframes MoveItemsInfinite2{0%{transform:translate(0);}12.5%{transform:translateY(10px);}25%{transform:translate(10px);}37.5%{transform:translate(10px,-10px);}50%{transform:translate(0);}62.5%{transform:translateY(-10px);}75%{transform:translate(-10px);}87.5%{transform:translate(-10px,10px);}to{transform:translate(0);}}
 @keyframes MoveItemsInfinite2{0%{transform:translate(0);}12.5%{transform:translateY(10px);}25%{transform:translate(10px);}37.5%{transform:translate(10px,-10px);}50%{transform:translate(0);}62.5%{transform:translateY(-10px);}75%{transform:translate(-10px);}87.5%{transform:translate(-10px,10px);}to{transform:translate(0);}}
 
-@font-face{font-family:slick;font-weight:400;font-style:normal;src:url(https://nuxsite1.nuxbet.com/assets/css/fonts/slick.eot);src:url(https://nuxsite1.nuxbet.com/assets/css/fonts/slick.eot#iefix) format('embedded-opentype'),url(https://nuxsite1.nuxbet.com/assets/css/fonts/slick.woff) format('woff'),url(https://nuxsite1.nuxbet.com/assets/css/fonts/slick.ttf) format('truetype'),url(https://nuxsite1.nuxbet.com/assets/css/fonts/slick.svg#slick) format('svg');}
+@font-face{font-family:slick;font-weight:400;font-style:normal;src:url(https://test.nuxapi.com/assets/css/fonts/slick.eot);src:url(https://test.nuxapi.com/assets/css/fonts/slick.eot#iefix) format('embedded-opentype'),url(https://test.nuxapi.com/assets/css/fonts/slick.woff) format('woff'),url(https://test.nuxapi.com/assets/css/fonts/slick.ttf) format('truetype'),url(https://test.nuxapi.com/assets/css/fonts/slick.svg#slick) format('svg');}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
 @font-face{font-family:'Open Sans';font-style:normal;font-weight:300;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/opensans/v28/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
@@ -549,7 +552,7 @@ footer{background:#000035;}
 .contacts a,.footerNav a{font-size:14px;line-height:171%;color:hsla(0,0%,100%,.8);text-decoration:none;transition:color .3s;}
 .contacts a:hover,.footerNav a:hover{color:#fff;}
 .contacts{padding-left:40px;position:relative;margin-top:14px;margin-bottom:17px;}
-.contacts:before{content:"";display:inline-block;position:absolute;top:50%;transform:translateY(-50%);left:0;width:37px;height:25px;background:url(https://nuxsite1.nuxbet.com/img/icons/mail.svg) no-repeat 50%;}
+.contacts:before{content:"";display:inline-block;position:absolute;top:50%;transform:translateY(-50%);left:0;width:37px;height:25px;background:url(https://test.nuxapi.com/img/icons/mail.svg) no-repeat 50%;}
 .contacts li{color:#89889f;font-size:12px;line-height:15px;margin:0 0 0 15px;}
 .footerIcons{display:flex;justify-content:flex-start;align-items:center;}
 .footerIcons li{margin-right:15px;}

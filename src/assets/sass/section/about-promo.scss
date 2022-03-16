@@ -1,0 +1,76 @@
+.about-promo {
+  min-height: 1380px;
+  position: relative;
+  background: url("../assets/img/about-bg.webp") no-repeat center bottom;
+  background-size: cover;
+  color: white;
+}
+
+.about-promo__wrapper {
+  display: grid;
+  gap: 30px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &::after {
+    content: "";
+    width: calc(100vw - 15px * 2);
+    height: 643px;
+    position: relative;
+    order: -1;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background: url("../assets/img/about-promo.webp") no-repeat center center;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      width: 373px;
+      height: 373px;
+      background-size: 373px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 643px;
+      height: 643px;
+      background-size: cover;
+    }
+  }
+}
+
+.about-promo__text--1 {
+  @media (min-width: $tablet) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+}
+
+.about-promo__text--2 {
+  @media (min-width: $tablet) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+}

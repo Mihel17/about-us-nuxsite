@@ -2,3 +2,17 @@
   display: grid;
   gap: 30px;
 }
+
+.main-content--about {
+  background: $bg;
+
+  .topHeader {
+    color: white;
+
+    ul.breadCrumbs li a,
+    ul.breadCrumbs li span,
+    ul.breadCrumbs li::after {
+      color: white;
+    }
+  }
+}

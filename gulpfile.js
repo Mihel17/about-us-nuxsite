@@ -40,7 +40,6 @@ const styles = () => {
     .pipe(gulp.dest(`${PATH_TO_DIST}/css`))
     .pipe(sync.stream());
 }
-exports.styles = styles;
 
 // HTML
 
@@ -61,28 +60,26 @@ const html = () => {
 // WebP
 
 const webpOptimized = () => {
-  return gulp.src("src/img/**/*.{jpg,png}")
+  return gulp.src("src/**/*.{jpg,png}")
     .pipe(webp({
       quality: 90,
       method: 6,
       sns: 0
     }))
     .pipe(gulp.dest("dist/img"))
-    .pipe(gulp.dest(`${PATH_TO_DIST}/img`));
+    .pipe(gulp.dest(`${PATH_TO_DIST}`));
 }
-exports.webpOptimized = webpOptimized;
 
 const createWebp = () => {
-  return gulp.src("src/img/**/*.{jpg,png}")
+  return gulp.src("src/**/*.{jpg,png}")
     .pipe(webp({
       quality: 100,
       method: 0,
       sns: 0
     }))
     .pipe(gulp.dest("dist/img"))
-    .pipe(gulp.dest(`${PATH_TO_DIST}/img`));
+    .pipe(gulp.dest(`${PATH_TO_DIST}`));
 }
-exports.createWebp = createWebp;
 
 // Sprite
 
@@ -106,7 +103,6 @@ const spriteMin = () => {
     .pipe(gulp.dest("dist/img/svg"))
     .pipe(gulp.dest(`${PATH_TO_DIST}/img/svg`));
 }
-exports.spriteMin = spriteMin;
 
 // Copy
 
@@ -116,6 +112,7 @@ const copy = (done) => {
     "src/assets/favicon/**/*",
     "src/assets/img/icons/*.svg",
     "src/layout/**/*.php",
+    "src/**/js/slick.min.js",
   ], {
     base: "src"
   })
@@ -123,18 +120,14 @@ const copy = (done) => {
     .pipe(gulp.dest(PATH_TO_DIST))
   done();
 }
-exports.copy = copy;
 
-// const copyStyle = (done) => {
+// const copy2 = (done) => {
 //   gulp.src([
-//     "src/assets/css/*.css",
 
 //   ])
-//     .pipe(gulp.dest("dist/css"))
+//     .pipe(gulp.dest(`${PATH_TO_DIST}/js`))
 //   done();
 // }
-// exports.copy = copyStyle;
-
 
 // Clean
 
@@ -143,28 +136,25 @@ const cleanOpenServer = () => {
     force: true
   });
 };
-exports.clean = cleanOpenServer;
 
 const clean = () => {
   return del("dist");
 };
-exports.clean = clean;
-
 
 // Server
 
 const server = (done) => {
   sync.init({
-    server: {
-      baseDir: "dist"
-    },
+    // server: {
+    //   baseDir: "dist"
+    // },
+    proxy: 'http://about-nuxsite/',
     cors: true,
     notify: false,
     ui: false,
   });
   done();
 }
-exports.server = server;
 
 // Reload
 
@@ -176,10 +166,10 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("src/**/*.scss", gulp.series(styles));
-  gulp.watch("src/**/*.js", gulp.series(webpackRun, reload));
-  gulp.watch("src/**/*.html", gulp.series(html, reload));
-  gulp.watch("src/**/*.php", gulp.series(html, reload));
+  gulp.watch("./src/**/*.scss", gulp.series(styles, copy));
+  gulp.watch("./src/**/*.js", gulp.series(webpackRun, copy, reload));
+  gulp.watch("./src/**/*.html", gulp.series(html, copy, reload));
+  gulp.watch("./src/**/*.php", gulp.series(html, copy, reload));
 }
 
 // Webpack
@@ -212,7 +202,6 @@ const build = gulp.series(
   ),
   webpackRun,
 );
-
 exports.build = build;
 
 // Default
@@ -221,6 +210,7 @@ exports.default = gulp.series(
   clean,
   cleanOpenServer,
   copy,
+  // copy2,
   // copyStyle,
   gulp.parallel(
     styles,
@@ -236,3 +226,5 @@ exports.default = gulp.series(
     watcher
   )
 );
+
+

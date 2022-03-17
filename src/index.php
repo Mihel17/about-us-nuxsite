@@ -11,7 +11,8 @@
 
 
     <?php require 'layout/section/about-promo.php'; ?>
-    <!-- SECTION-PRICING -->
+    <?php require 'layout/section/benefits.php'; ?>
+    <?php require 'layout/section/ready-start.php'; ?>
 
 
   </main>
@@ -25,4 +26,5 @@
   <script src="js/script.js" type="module">
   </script>
 </body>
+
 </html>

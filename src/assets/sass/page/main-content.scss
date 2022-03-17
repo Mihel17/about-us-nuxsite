@@ -5,9 +5,19 @@
 
 .main-content--about {
   background: $bg;
+  gap: 0;
 
   .topHeader {
+    padding-top: 75px;
     color: white;
+
+    @media (min-width: $tablet) {
+      padding-top: 58px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 115px;
+    }
 
     ul.breadCrumbs li a,
     ul.breadCrumbs li span,

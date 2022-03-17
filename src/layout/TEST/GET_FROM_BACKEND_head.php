@@ -1,8 +1,7 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
   <title>title</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/css.css">
@@ -13,6 +12,4 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- ___GOOGLE FONTS___ -->
 
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>

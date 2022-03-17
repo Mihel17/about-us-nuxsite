@@ -1,11 +1,21 @@
 console.log('hi from slider')
 
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.about-promo__slider'
+});
+
 $(document).ready(() => {
   $('.about-promo__slider').slick({
     arrows: false,
     dots: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     centerPadding: '60px',
+    focusOnSelect: true,
+    asNavFor: '.slider-for',
     // autoplay: true,
     // speed: 1000,
     // autoplaySpeed: 800,
@@ -19,13 +29,13 @@ $(document).ready(() => {
       {
         breakpoint: 1440, // до 1440пх 2 колонки
         settings: {
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
       {
         breakpoint: 1918,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 2
         }
       }
     ]

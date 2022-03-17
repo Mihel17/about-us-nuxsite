@@ -3,12 +3,22 @@
   overflow: visible !important;
   min-width: 0;
   position: relative;
-  padding: 0 50px;
-  right: 65px;
+  padding: 0 50px 0 0;
+  right: 0px;
+  clip-path: inset(0vw -100vw -100vw 0vw);
 
   @media (min-width: $tablet) {
-    padding: 0 70px;
-    right: 85px;
+    padding: 0 335px 0 0;
+    right: -33px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 375px 0 0;
+    right: -133px;
+  }
+
+  @media (min-width: $desktop2) {
+    padding: 0;
   }
 
   .slick-list {
@@ -17,17 +27,31 @@
 
   .slick-track {
     display: flex;
-    align-items: flex-start;
   }
 
   .slick-dots {
-    gap: 10px;
-    height: 5px;
+    height: 1px;
+    position: relative;
+    left: calc(50% + 25px);
+    margin-top: 18px;
+
+    @media (min-width: $tablet) {
+      margin-top: 70px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 150px;
+    }
 
     li {
       height: 100%;
-      background: white;
-      border-radius: 5px;
+      background: $light-purple;
+      opacity: 0.2;
+    }
+
+    li.slick-active {
+      opacity: 1;
     }
   }
 }

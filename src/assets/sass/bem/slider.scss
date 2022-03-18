@@ -1,11 +1,12 @@
 .about-promo__slider.slick-slider {
-  max-width: calc(100vw - 15px * 2) !important;
-  overflow: visible !important;
+  max-width: calc(100vw - 15px * 2);
   min-width: 0;
   position: relative;
   padding: 0 50px 0 0;
   right: 0px;
   clip-path: inset(0vw -100vw -100vw 0vw);
+
+  // margin-bottom: 0 !important;
 
   @media (min-width: $tablet) {
     padding: 0 335px 0 0;
@@ -19,6 +20,7 @@
 
   @media (min-width: $desktop2) {
     padding: 0;
+    margin-bottom: 0 !important;
   }
 
   .slick-list {
@@ -26,7 +28,9 @@
   }
 
   .slick-track {
-    display: flex;
+    &::before {
+      display: none;
+    }
   }
 
   .slick-dots {
@@ -41,7 +45,7 @@
     }
 
     @media (min-width: $desktop) {
-      margin-bottom: 150px;
+      margin-bottom: 170px;
     }
 
     li {

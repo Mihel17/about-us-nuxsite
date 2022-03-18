@@ -25,4 +25,21 @@
       color: white;
     }
   }
+
+  section.readyToStart {
+    background: #000017;
+
+    h2 span:nth-child(2) {
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+
+    .animationsWrapper {
+      display: none;
+    }
+  }
+}
+
+.main-content--about + footer {
+  background: #000017;
 }

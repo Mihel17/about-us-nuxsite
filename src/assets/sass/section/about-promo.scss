@@ -3,7 +3,6 @@
   background: url("../assets/img/about-bg.webp") no-repeat center bottom;
   background-size: cover;
   color: rgba(white, 0.7);
-  margin-bottom: -30px;
 
   .about-promo__title {
     margin: 0;
@@ -120,7 +119,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 230px;
+    margin-top: 255px;
   }
 
   @media (min-width: $desktop2) {
@@ -128,6 +127,8 @@
   }
 
   .about-promo__slider .about-promo__slide {
+    height: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-rows: max-content max-content 1fr;
     opacity: 0.4;
@@ -200,7 +201,7 @@
 }
 
 .about-promo__slide-content {
-  min-height: 160px;
+  // min-height: 160px;
   padding: 22px;
   margin: 0 25px 0 0;
   border: 1px solid rgba($light-purple, 0.1);

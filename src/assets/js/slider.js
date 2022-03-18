@@ -1,5 +1,3 @@
-console.log('hi from slider')
-
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,

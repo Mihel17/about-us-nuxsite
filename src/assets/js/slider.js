@@ -16,9 +16,9 @@ $(document).ready(() => {
     centerPadding: '60px',
     focusOnSelect: true,
     asNavFor: '.slider-for',
-    // autoplay: true,
-    // speed: 1000,
-    // autoplaySpeed: 800,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 768, // до 768пх 1 колонка

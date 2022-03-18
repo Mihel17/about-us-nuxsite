@@ -97,6 +97,8 @@
   @media (min-width: $tablet) {
     grid-area: benefits__fake-title1;
     margin-left: 225px;
+    max-width: 520px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop) {
@@ -110,6 +112,8 @@
 
   @media (min-width: $tablet) {
     grid-area: benefits__fake-title2;
+    max-width: 750px;
+    margin-right: auto;
   }
 
   br {

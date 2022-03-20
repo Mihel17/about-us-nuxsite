@@ -29,6 +29,11 @@
 
 .more-info__text {
   color: white;
+
+  @media (min-width: $desktop) {
+    min-width: 386px;
+    width: 386px;
+  }
 }
 
 .more-info__list {

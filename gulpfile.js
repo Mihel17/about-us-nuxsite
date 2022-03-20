@@ -43,7 +43,7 @@ const styles = () => {
 
 // HTML
 
-const html = () => {
+const php = () => {
   return gulp.src("src/*.php")
     .pipe(fileinclude())
     .pipe(htmlmin({
@@ -52,6 +52,17 @@ const html = () => {
     }))
     .pipe(rename({
       extname: ".php"
+    }))
+    .pipe(gulp.dest("dist"))
+    .pipe(gulp.dest(PATH_TO_DIST));
+}
+
+const html = () => {
+  return gulp.src("src/*.html")
+    .pipe(fileinclude())
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
     }))
     .pipe(gulp.dest("dist"))
     .pipe(gulp.dest(PATH_TO_DIST));
@@ -195,6 +206,7 @@ const build = gulp.series(
   // copyStyle,
   gulp.parallel(
     styles,
+    php,
     html,
     spriteMin,
     // sprite,
@@ -214,7 +226,7 @@ exports.default = gulp.series(
   // copyStyle,
   gulp.parallel(
     styles,
-    html,
+    php,
     spriteMin,
     // sprite,
     // svg,

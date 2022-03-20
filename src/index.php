@@ -15,6 +15,7 @@
     <?php require 'layout/section/more-info.php'; ?>
     <?php require 'layout/section/ready-start.php'; ?>
 
+    <?php require 'layout/section/modal.php'; ?>
 
   </main>
   <!-- MAIN-CONTENT -->

@@ -14,9 +14,9 @@ $(document).ready(() => {
     centerPadding: '60px',
     focusOnSelect: true,
     asNavFor: '.slider-for',
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    // speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000,
     responsive: [
       {
         breakpoint: 768, // до 768пх 1 колонка
@@ -25,9 +25,15 @@ $(document).ready(() => {
         }
       },
       {
-        breakpoint: 1440, // до 1440пх 2 колонки
+        breakpoint: 992, // до 768пх 1 колонка
         settings: {
           slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1440, // до 1440пх 2 колонки
+        settings: {
+          slidesToShow: 2
         }
       },
       {

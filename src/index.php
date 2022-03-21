@@ -13,10 +13,9 @@
     <?php require 'layout/section/about-promo.php'; ?>
     <?php require 'layout/section/benefits.php'; ?>
     <?php require 'layout/section/more-info.php'; ?>
-    <?php require 'layout/section/ready-start.php'; ?>
 
-    <?php require 'layout/section/modal.php'; ?>
 
+    <?php require 'layout/TEST/GET_FROM_BACKEND__contact.php'; ?>
   </main>
   <!-- MAIN-CONTENT -->
 

@@ -4,7 +4,7 @@
   position: relative;
   padding: 0 50px 0 0;
   right: 0px;
-  clip-path: inset(0vw -100vw -100vw 0vw);
+  // clip-path: inset(0vw -100vw -100vw 0vw);
 
   // margin-bottom: 0 !important;
 
@@ -13,12 +13,18 @@
     right: -33px;
   }
 
+  @media (min-width: 992px) {
+    padding: 0 150px 0 0;
+  }
+
   @media (min-width: $desktop) {
     padding: 0 375px 0 0;
     right: -133px;
   }
 
   @media (min-width: $desktop2) {
+    right: -102px;
+    width: calc(100% + 100px);
     padding: 0;
     margin-bottom: 0 !important;
   }

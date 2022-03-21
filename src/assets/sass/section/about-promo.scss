@@ -12,6 +12,10 @@
       margin-bottom: 32px;
     }
 
+    @media (min-width: 992px) {
+      margin-top: 50px;
+    }
+
     @media (min-width: $desktop) {
       margin-top: 100px;
       margin-bottom: 45px;
@@ -213,6 +217,10 @@
 
   @media (min-width: $tablet) {
     margin: 0 50px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 70px 0 0;
   }
 
   div.border-corner {

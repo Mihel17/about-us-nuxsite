@@ -78,8 +78,12 @@
 }
 
 .about-promo__text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 
   @media (min-width: $desktop) {
     padding-right: 30px;

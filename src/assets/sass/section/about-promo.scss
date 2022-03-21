@@ -181,6 +181,11 @@
     opacity: 1;
     transition: all 0.5s;
 
+    .about-promo__slide-title,
+    .about-promo__slide-content {
+      opacity: 1;
+    }
+
     .title-style {
       gap: 20px;
 
@@ -281,6 +286,7 @@
   align-content: center;
   transition: all 0.5s;
   margin: 55px 0 -50px;
+  opacity: 0.5;
 
   @media (min-width: $tablet) {
     margin-top: 24px;
@@ -358,7 +364,6 @@
       margin-left: 35px;
       background: linear-gradient(-90deg, rgba(124, 124, 255, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
       transition: all 0.5s;
-      opacity: 0.5;
     }
 
     div {
